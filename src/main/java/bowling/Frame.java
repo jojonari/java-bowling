@@ -62,7 +62,7 @@ public class Frame {
         }
 
         if (pitchingCount == 2){
-            return scores.get(0).getPoint() + "|" + scores.get(1).getPoint();
+            return scores.get(0).printScore() + "|" + scores.get(1).printScore();
         }
         throw new IllegalArgumentException("Error");
     }
